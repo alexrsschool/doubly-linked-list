@@ -18,8 +18,8 @@ describe('LinkedList', () => {
 
             list.append(data);
 
-            expect(list._tail).to.be.an.instanceof(Node)
-            expect(list._head).to.be.an.instanceof(Node)
+            expect(list._tail).to.be.an.instanceof(Node);
+            expect(list._head).to.be.an.instanceof(Node);
         });
 
         it('should add new data to the end of list', () => {
@@ -86,9 +86,9 @@ describe('LinkedList', () => {
             const list = new LinkedList();
             const position = 1;
             const data = 42;
-            let values = [10, 20];            
+            let values = [10, 20];
             values.forEach((value) => { list.append(value) });
-            
+
             list.insertAt(position, data);
             values.splice(position, 0, data);
 
